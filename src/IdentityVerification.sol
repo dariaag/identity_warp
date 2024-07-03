@@ -1,10 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import "@hyperlane-xyz/contracts/contracts/interfaces/IWarpRouter.sol";
-import "@hyperlane-xyz/contracts/contracts/WarpRouter.sol";
+import {Router} from "./contracts/client/Router.sol";
 
-contract IdentityVerification is WarpRouter {
+contract IdentityVerification is Router {
     struct Identity {
         string name;
         string dob; // Date of birth
